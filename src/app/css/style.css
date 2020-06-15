@@ -1,0 +1,203 @@
+.sideNav {
+    -fx-background-color: #121432;
+}
+
+.sideNav Button {
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-cursor: hand;
+}
+
+.sideNav Button:hover,
+.sideNav Button.active {
+    -fx-background-color: transparent;
+    -fx-border-style: hidden hidden hidden solid;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+}
+
+.sidebar {
+    -fx-background-color: #121432;
+}
+
+.accent {
+    -fx-background-color: #FFA000;
+}
+
+.viewActiveTab Button {
+    -fx-background-color: #474646;
+    -fx-cursor: initial;
+}
+
+.homeBtn {
+    -fx-background-image: url("../assets/home.png");
+}
+
+.systemsBtn {
+    -fx-background-image: url("../assets/tower-pc-1.png");
+}
+
+.componentsBtn {
+    -fx-background-image: url("../assets/componente.png");
+}
+
+.addProductBtn {
+    -fx-background-image: url("../assets/plusalb.png");
+}
+
+.searchBar {
+    -fx-background-color: #FFA000;
+    -fx-opacity: 0.47;
+    -fx-padding: 0px 0px 0px 40px;
+    -fx-background-radius: 9;
+    -fx-background-image: url("../assets/search.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 13px 15px;
+}
+
+.cardTemplate {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(8, 88, 207, 0.08), 7, 0, 0, 5);
+    -fx-background-radius: 15;
+}
+
+.cardTemplate:hover {
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.codeSearch {
+    -fx-background-color: #BEBEBE;
+    -fx-opacity: 0.47;
+    -fx-padding: 0px 0px 0px 40px;
+    -fx-background-radius: 9;
+    -fx-background-image: url("../assets/search.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 13px 15px;
+}
+
+.combo-box {
+    -fx-background-color: transparent;
+    -fx-border-color: #9599A1;
+    -fx-mark-color: #9599A1;
+    -fx-border-radius: 10;
+}
+
+.report {
+
+}
+
+.report:hover {
+    -fx-cursor: hand;
+}
+
+.updateBtn {
+    -fx-background-color: #FF985B;
+    -fx-background-radius: 5;
+    -fx-font-family: "Gotham Pro Black";
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+}
+
+.updateBtn:hover {
+    fx-background-color: #FF985B;
+    -fx-background-radius: 5;
+    -fx-font-family: "Gotham Pro Black";
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.deleteBtn {
+    -fx-background-image: url("../assets/rubbish-can.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+}
+
+.cancel {
+    -fx-background-image: url("../assets/no.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+}
+
+.saveBtn {
+    -fx-background-image: url("../assets/yes.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+}
+
+.dashboardCardBlue {
+    -fx-background-color: #6672FB;
+    -fx-background-radius: 25;
+}
+
+.dashboardCardBlue:hover {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #C7C9EB, 50, 0, 0, 1);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.dashboardCardRed {
+    -fx-background-color: #E8523F;
+    -fx-background-radius: 25;
+}
+
+.dashboardCardRed:hover {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #F2D0CA, 50, 0, 0, 1);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.descriptionText {
+    -fx-font-family: "Gotham Pro Medium";
+    -fx-font-size: 14;
+}
+
+.titleText {
+    -fx-font-family: "Gotham Pro Black";
+    -fx-font-size: 30;
+}
+
+.timeIcon {
+    -fx-background-image: url("../assets/wall-clock.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+}
+
+.folderIcon {
+    -fx-background-image: url("../assets/Interface.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+}
+
+.recentFiles:hover {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #F7F7F7, 20, 0, 0, 1);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.closeBtn {
+    -fx-background-image: url("../assets/close.png");
+    -fx-background-repeat: no-repeat;
+    -fx-cursor: hand;
+}
+
+.warranty {
+    -fx-background-image: url("../assets/warranty.png");
+    -fx-background-repeat: no-repeat;
+}
+.promotion{
+    -fx-background-image: url("../assets/discount-label.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover,auto;
+    -fx-effect: dropshadow(gaussian, #F2D0CA, 15, 0, 0, 1);
+}
+
+#giftPane {
+    -fx-padding: 30px 10px;
+}

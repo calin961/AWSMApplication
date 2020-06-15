@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53" height="35" viewBox="0 0 53 35">
+  <g id="plus" transform="translate(0 -147)">
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="53" height="35" transform="translate(0 147)" fill="#474646"/>
+    <rect id="Rectangle_6" data-name="Rectangle 6" width="2" height="35" transform="translate(0 147)" fill="#ffa000"/>
+    <path id="plus-2" data-name="plus" d="M17.376,7.836H11.584a.341.341,0,0,1-.341-.341V1.7a1.7,1.7,0,1,0-3.407,0V7.5a.341.341,0,0,1-.341.341H1.7a1.7,1.7,0,1,0,0,3.407H7.5a.341.341,0,0,1,.341.341v5.792a1.7,1.7,0,0,0,3.407,0V11.584a.341.341,0,0,1,.341-.341h5.792a1.7,1.7,0,0,0,0-3.407Zm0,0" transform="translate(17 155)" fill="#ffa000"/>
+  </g>
+</svg>

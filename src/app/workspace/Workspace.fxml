@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.workspace.WorkspaceController">
+    <stylesheets>
+        <URL value="@/app/css/style.css" />
+    </stylesheets>
+    <left>
+        <VBox prefHeight="714.0" prefWidth="67.0" styleClass="sideNav" BorderPane.alignment="CENTER">
+            <children>
+                <Pane fx:id="navBar" prefHeight="700.0" prefWidth="67.0">
+                    <children>
+                        <Button layoutY="42.0" mnemonicParsing="false" onMouseClicked="#loadHomeScene" prefHeight="34.0"
+                                prefWidth="67.0">
+                            <styleClass>
+                                <String fx:value="homeBtn"/>
+                                <String fx:value="active"/>
+                            </styleClass>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutY="106.0" mnemonicParsing="false"
+                                onMouseClicked="#loadSystemsScene" prefHeight="34.0" prefWidth="67.0"
+                                styleClass="systemsBtn"/>
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutY="175.0" mnemonicParsing="false"
+                                onMouseClicked="#loadComponentsScene" prefHeight="35.0" prefWidth="67.0"
+                                styleClass="componentsBtn"/>
+                        <Button alignment="CENTER" cache="true" contentDisplay="CENTER" layoutY="636.0"
+                                mnemonicParsing="false" onMouseClicked="#loadAddProductScene" prefHeight="35.0"
+                                prefWidth="67.0" styleClass="addProductBtn"/>
+                    </children>
+                </Pane>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <AnchorPane prefHeight="714.0" prefWidth="922.0" style="-fx-background-color: F5F6FA;"
+                    BorderPane.alignment="CENTER">
+            <children>
+
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

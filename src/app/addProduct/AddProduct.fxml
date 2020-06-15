@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.addProduct.AddProductController">
+    <children>
+        <Pane prefHeight="700.0" prefWidth="957.0" visible="false">
+            <children>
+                <Label layoutX="350.0" layoutY="122.0" text="Sisteme disponibile" textFill="#636363">
+                    <font>
+                        <Font name="Arial Black" size="25.0" />
+                    </font>
+                </Label>
+                <Group layoutX="572.0" layoutY="23.0">
+                    <children>
+                        <TextField prefHeight="46.0" prefWidth="264.0" style="-fx-background-color: #FFA000; -fx-background-radius: 8; -fx-opacity: 0.47; -fx-alignment: center;" />
+                        <SVGPath content="M 264.4 263.4 l -4.9 -4.9 c 0.9 -1.2 1.5 -2.6 1.5 -4.2 c 0 -3.7 -3 -6.7 -6.7 -6.7 s -6.7 3 -6.7 6.7 c 0 3.7 3 6.7 6.7 6.7 c 1.6 0 3.1 -0.6 4.2 -1.5 l 4.9 4.9 c 0.1 0.1 0.4 0.1 0.5 0 l 0.5 -0.5 C 264.5 263.8 264.5 263.5 264.4 263.4 Z M 254.2 259.5 c -2.9 0 -5.3 -2.4 -5.3 -5.3 c 0 -2.9 2.4 -5.3 5.3 -5.3 s 5.3 2.4 5.3 5.3 C 259.5 257.2 257.2 259.5 254.2 259.5 Z" layoutX="-236.4000244140625" layoutY="-233.39999389648438" style="-fx-opacity: 0.4;" />
+                    </children>
+                </Group>
+            </children>
+        </Pane>
+        <VBox layoutX="263.0" layoutY="134.0" style="-fx-spacing: 20;">
+            <children>
+                <HBox alignment="CENTER">
+                    <children>
+                        <Label alignment="CENTER" text="Adauga Produs" textFill="#636363">
+                            <font>
+                                <Font name="Arial Black" size="25.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <VBox prefHeight="69.0" prefWidth="439.0" style="-fx-spacing: 10;">
+                    <children>
+                        <HBox fx:id="productCategory" style="-fx-spacing: 10;">
+                            <children>
+                                <Label prefWidth="100.0" text="Tip Produs" textFill="#404040">
+                                    <font>
+                                        <Font name="Arial Black" size="15.0" />
+                                    </font>
+                                </Label>
+                                <RadioButton fx:id="isSystem" mnemonicParsing="false" onAction="#switchProductCategory" selected="false" text="Sisteme" textFill="#bebebe">
+                                    <font>
+                                        <Font name="Arial" size="15.0" />
+                                    </font>
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="productCategoryGroup" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="isComponent" mnemonicParsing="false" onAction="#switchProductCategory" selected="true" text="Componente" textFill="#bebebe" toggleGroup="$productCategoryGroup">
+                                    <font>
+                                        <Font name="Arial" size="15.0" />
+                                    </font>
+                                </RadioButton>
+                            </children>
+                        </HBox>
+                        <HBox fx:id="categorieHBOX" style="-fx-spacing: 10;">
+                            <children>
+                                <Label prefWidth="100.0" text="Categorie" textFill="#404040">
+                                    <font>
+                                        <Font name="Arial Black" size="15.0" />
+                                    </font>
+                                </Label>
+                                <ChoiceBox fx:id="categorySelect" prefWidth="150.0" style="-fx-background-color: FFFFFF; -fx-effect: dropshadow(gaussian,rgba(8,88,207,0.08),7,0,0,5 );" />
+                            </children>
+                        </HBox>
+                        <HBox style="-fx-spacing: 10;">
+                            <children>
+                                <Label prefWidth="100.0" text="Denumire" textFill="#404040">
+                                    <font>
+                                        <Font name="Arial Black" size="15.0" />
+                                    </font>
+                                </Label>
+                                <TextField id="denumire" fx:id="nameInput" prefHeight="26.0" prefWidth="264.0" promptText="type here.." style="-fx-border-color: #0083FD; -fx-background-color: transparent; -fx-border-radius: 1;">
+                                    <opaqueInsets>
+                                        <Insets bottom="12.0" right="1.0" />
+                                    </opaqueInsets>
+                                    <font>
+                                        <Font name="Arial" size="12.0" />
+                                    </font>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox fx:id="providerHBOX" style="-fx-spacing: 10;">
+                            <children>
+                                <Label prefWidth="100.0" text="Furnizor" textFill="#404040">
+                                    <font>
+                                        <Font name="Arial Black" size="15.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="providerInput" prefWidth="264.0" promptText="type here.." style="-fx-border-color: #0083FD; -fx-background-color: transparent; -fx-border-radius: 1;">
+                                    <opaqueInsets>
+                                        <Insets bottom="12.0" right="1.0" />
+                                    </opaqueInsets>
+                                </TextField>
+                            </children>
+                        </HBox>
+                        <HBox style="-fx-spacing: 10;">
+                            <children>
+                                <Label prefHeight="23.0" prefWidth="100.0" text="Cantitate" textFill="#404040">
+                                    <font>
+                                        <Font name="Arial Black" size="15.0" />
+                                    </font>
+                                </Label>
+                                <Spinner fx:id="amountInput" />
+                            </children>
+                        </HBox>
+                        <HBox style="-fx-spacing: 10;">
+                            <children>
+                                <Label prefHeight="23.0" prefWidth="100.0" text="Pret" textFill="#404040">
+                                    <font>
+                                        <Font name="Arial Black" size="15.0" />
+                                    </font>
+                                </Label>
+                                <Spinner fx:id="priceInput" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="statusHBOX" style="-fx-spacing: 10;">
+                            <children>
+                                <Label fx:id="statusText" prefHeight="23.0" prefWidth="100.0" text="Status" textFill="#404040">
+                                    <font>
+                                        <Font name="Arial Black" size="15.0" />
+                                    </font>
+                                </Label>
+                                <CheckBox fx:id="isPaid" mnemonicParsing="false" text="Platit" textFill="#bebebe">
+                                    <font>
+                                        <Font name="Arial" size="15.0" />
+                                    </font>
+                                </CheckBox>
+                                <CheckBox fx:id="isDelivered" mnemonicParsing="false" selected="true" text="Livrat" textFill="#bebebe">
+                                    <font>
+                                        <Font name="Arial" size="15.0" />
+                                    </font>
+                                </CheckBox>
+                            </children>
+                        </HBox>
+                        <HBox fx:id="deliveryCommentsHBOX" style="-fx-spacing: 10;">
+                            <children>
+                                <Label fx:id="deliveryCommentsText" prefWidth="100.0" text="Observatii" textFill="#404040">
+                                    <font>
+                                        <Font name="Arial Black" size="15.0" />
+                                    </font>
+                                </Label>
+                                <TextArea fx:id="deliveryComments" prefHeight="82.0" prefWidth="200.0" scrollLeft="5.0" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="warrantyHBOX" style="-fx-spacing: 10;" translateY="-130.0" visible="false">
+                            <children>
+                                <Label prefWidth="100.0" text="Garantie" textFill="#404040">
+                                    <font>
+                                        <Font name="Arial Black" size="15.0" />
+                                    </font>
+                                </Label>
+                                <Spinner fx:id="warrantyInput" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <HBox alignment="CENTER">
+                    <children>
+                        <Button fx:id="addBtn" mnemonicParsing="false" onAction="#addNewProduct" prefHeight="42.0" prefWidth="160.0" style="-fx-background-radius: 13; -fx-background-color: #0083FD;" styleClass="adauga" stylesheets="@../css/style.css" text="adauga" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Black" size="15.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</Pane>
